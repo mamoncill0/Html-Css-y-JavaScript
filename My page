@@ -1,0 +1,465 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My page</title>
+</head>
+
+<body>
+    <header>
+        <div class="div1">
+            <a class="primerA" href="./index.html">
+                <h1 class="primerh1">My Personal <span class="primerh1conspan">Portfolio</span></h1>
+            </a>
+            <nav class="nav1">
+                <a href="./index.html">Main Page</a>
+                <a href="./social.html">Social Media</a>
+                <a href="./projects.html">Projects</a>
+            </nav>
+    </header>
+    <div class="division">
+        <main>
+            <div class="div2">
+                <h2 class="primerh2">This is me</h2>
+                <img class="img" src="./Captura desde 2025-05-20 10-35-20.png" alt="Michael">
+                <p class="cambio">Hello, I'm Michael, <span>I'm eighteen years old</span>,
+                    <br>I love playing football, programming and walking,
+                    <br>I want to learn English and Software Develoment,
+                    <br>I like swim, I like run, I like eat, I like talk with my friends
+                </p>
+                <a class="contacto" href="./social.html"><p class="contacto"><strong>My contact</strong></a></p>
+            </div>
+            <div>
+                <table class="table" border="1px">My projects
+                    <tr>
+                        <td>Project Name</td>
+                        <td>Image</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>Assets</td>
+                        <td><img class="img2" src="./assest.png" alt="assets"></td>
+                        <td><a class="links" href="./Assets/ejercicioHTML.html" target="_blank">My Assets</a></td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio</td>
+                        <td><img class="img2" src="./portafolio.png" alt="Maik"></td>
+                        <td><a class="links" href="./Semana1 Html/portafolio_[Michael].html" target="_blank">My Personal
+                                Portfolio</a></td>
+                    </tr>
+                    <tr>
+                        <td>Simulacro</td>
+                        <td><img class="img2" src="./cafe.png" alt="coffee shop"></td>
+                        <td><a class="links" href="./Simulacro/index.html" target="_blank">Simulacro</a></td>
+                    </tr>
+                </table>
+        </main>
+        <div class="division2">
+            <aside>
+                <h3 class="text1">What are my favorite sports?</h3>
+                <p class="text2">My favorite sports are soccer, running and swimming</p>
+                <img class="hobbies" src="./soccer.webp" alt="futbol">
+                <img class="hobbies" src="./correr.webp" alt="running">
+                <img class="hobbies" src="./natacion.webp" alt="swimming">
+            </aside>
+            <aside class="separacion">
+                <h3 class="text1">What are my favorite movies?</h3>
+
+                <img class="movies" src="./crawl.webp" alt="Crawl">
+                <p><strong>Synopsis:</strong></p>
+                <p class="description">Crawl: The film centers on Haley Keller, a competitive swimmer played by Kaya Scodelario, who ignores
+                    evacuation orders to search for her missing father, Dave, played by Barry Pepper, during a Category
+                    5 hurricane hitting her Florida hometown. Upon arriving at their family home, Haley finds her father
+                    gravely injured in the crawl space of the house, and they become trapped by rapidly encroaching
+                    floodwaters. As the storm intensifies, Haley and Dave discover that the rising water level is the
+                    least of their fears, as they face a relentless attack from a pack of gigantic alligators.
+                </p>
+                <img class="movies" src="./borat.webp" alt="Borat">
+                <p><strong>Synopsis:</strong></p>
+                <p class="description">Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan is a 2006
+                    mockumentary comedy film directed by Larry Charles. The film stars Sacha Baron Cohen as Borat
+                    Sagdiyev, a fictional Kazakh journalist traveling through the United States to make a documentary
+                    about American society and culture. Borat's journey exposes the prejudices and hypocrisies in
+                    American culture through unscripted interactions with real-life Americans who believe he is a
+                    foreigner with little understanding of local customs.</p>
+                <img class="movies" src="./birdBox.webp" alt="Bird Box">
+                <p><strong>Synopsis:</strong></p>
+                <p class="description">Bird Box is a 2018 American post-apocalyptic horror thriller film directed by Susanne Bier and
+                    written by Eric Heisserer. The film is based on the 2014 novel of the same name by Josh Malerman. It
+                    stars Sandra Bullock as Malorie Hayes, who tries to protect herself and her two children from
+                    entities that cause people to kill themselves upon seeing them.
+                </p>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <a class="page" href="./index.html"><h1>My page</h1></a>
+        <nav class="navegation">
+            <a class="linkMedia" href="./index.html">Main Page</a>
+            <a class="linkMedia" href="./social.html">Social Media</a>
+            <a class="linkMedia" href="./projects.html">Projects</a>
+        </nav>
+        <p>&copy;Derechos reservados</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+CSS
+
+html {
+    background-color: rgb(9, 133, 91);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 128, 128);
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.nav1 a:hover {
+    background-color: #07577c;
+}
+
+.nav1 a:hover {
+    font-size: 34px;
+    transition: all 1s;
+}
+
+.primerA {
+    text-decoration: none;
+}
+
+.primerh1 {
+    font-weight: normal;
+    color: white;
+    font-size: 65px;
+}
+.img2:hover{
+    transform: rotate(-360deg);
+    transition: all 3s;
+}
+.links:hover{
+    background-color: #784d3c;
+}
+.primerh1 span {
+    font-weight: bold;
+}
+
+.primerh1:hover {
+    color: rgb(70, 131, 70);
+}
+
+.primerh1:hover {
+    translate: 80px;
+    transition-duration: 1.2s;
+}
+
+.div2 {
+    padding: 25px;
+    display: block;
+}
+
+.primerh2 {
+    text-align: start;
+    display: block;
+}
+
+.contacto {
+    text-decoration: none;
+    color: rgb(69, 243, 1);
+}
+.contacto:hover{
+    translate: 20px;
+    transition: all 2s;
+}
+.img {
+    display: inline-block;
+    image-orientation: from-image;
+    width: 130px;
+    border-radius: 45px;
+    outline: 30px solid color(128 39 115);
+    border: 14px groove #b81818;
+    box-shadow: 7px 7px 7px 0px #000000, 8px 9px 7px 8px #000000;
+    transition: all 1s;
+}
+
+.img:hover {
+    width: 700px;
+    position: static;
+    top: 0px;
+    left: 0px;
+}
+
+.cambio {
+    margin: 15px;
+}
+
+.cambio span {
+    font-weight: bold;
+    color: aquamarine;
+}
+
+main {
+    background-color: rgb(38, 38, 107);
+}
+
+.div2 .table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+tr {
+    text-align: center;
+}
+
+.img2 {
+    width: 700px;
+    height: 350px;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(170, 255, 0);
+}
+
+.aside {
+    padding: 0;
+}
+
+.h3lateral {
+    display: block;
+    font-size: 3.2em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    border-bottom: 1px solid chartreuse;
+}
+
+p span {
+    font-weight: bold;
+}
+
+.more {
+    display: inline-block;
+    background-color: #784d3c;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(9, 133, 91);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+
+.navegation a {
+    text-decoration: none;
+    color: #b81818;
+    font-size: 15px;
+}
+
+.division {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #07577c;
+}
+
+.division2 {
+    background-color: #07577c;
+    justify-items: center;
+}
+
+.text1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.text2 {
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hobbies {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+.hobbies:hover{
+    width: 260px;
+    height: 260px;
+    transition: all 1s;
+}
+.separacion {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.movies {
+    display: inline-block;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+}
+.movies:hover{
+    transform: scale(2);
+    transition: all 0.5s;
+}
+.socialMedia {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    text-decoration: none;
+    color: white;
+}
+
+.page:hover {
+    padding: 23px;
+    color: aqua;
+    transform: rotate(-23deg);
+    transition: all 1.2s;
+}
+
+.linkMedia:hover {
+    color: yellowgreen;
+}
+
+.description {
+    line-height: 2;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .division {
+        grid-template-columns: 1fr;
+    }
+
+    .primerh1 {
+        font-size: 20px;
+    }
+
+    .nav1 a {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .img2 {
+        width: 250px;
+        height: 200px;
+    }
+
+    .hobbies {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img:hover{
+        width: 500px;
+        position: static;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 480px){
+    .primerh1 {
+        font-size: 10px;
+    }
+
+    .nav1 a {
+        font-size: 7px;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+
+    .table {
+        width: 450px;
+    }
+
+    .division2 {
+        width: 450px;
+        padding-left: 80px;
+    }
+
+    .img:hover {
+        width: 280px;
+        position: static;
+        top: 0px;
+        left: 0px;
+    }
+    .img2{
+        width: 150px;
+        height: 150px;
+    }
+}
